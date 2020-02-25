@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/Component/GridView/BuilderGridView.dart';
+import 'package:flutter_demo/Component/Padding/Padding.dart';
+import 'package:flutter_demo/Component/Stack/Stack.dart';
 import '../Component/Text/Text.dart';
 import '../Component/Home/Home.dart';
 import '../Root.dart';
@@ -13,6 +16,11 @@ import '../Component/ListView/VListView.dart';
 import '../Component/ListView/HListView2.dart';
 import '../Component/ListView/DynamicListView.dart';
 import '../Component/GridView/GridView.dart';
+import '../Component/Padding/Padding.dart';
+import '../Component/Column/Column.dart';
+import '../Component/Row/Row.dart';
+import '../Component/Expanded/Expanded.dart';
+import '../Component/Stack/Stack.dart';
 
 final Map routes = {
   '/': (context) =>
@@ -36,6 +44,16 @@ final Map routes = {
       new RootApp(new MyDynamicListView(), "动态 ListView 组件", new GoBack()),
   '/gridview': (context) =>
       new RootApp(new MyGridView(), "GridView 组件", new GoBack()),
+  '/dynamicgridview': (context) =>
+      new RootApp(new MyBuilderGridView(), "动态 GridView 组件", new GoBack()),
+  '/padding': (context) =>
+      new RootApp(new MyPadding(), "Padding 组件", new GoBack()),
+  '/column': (context) =>
+      new RootApp(new MyColumn(), "Column 组件", new GoBack()),
+  '/row': (context) => new RootApp(new MyRow(), "Row 组件", new GoBack()),
+  '/expanded': (context) =>
+      new RootApp(new MyExpanded(), "Expanded 组件", new GoBack()),
+  '/stack': (context) => new RootApp(new MyStack(), "层叠 组件", new GoBack()),
 };
 
 // 命名路由传参的具体写法

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
   GridView能更好的实现网格布局，多用于商品列表的展示。能很好的将其内的
   子元素按照不同的要求进行排列。
 
+  GridView 的每一项设定的宽度与高度是无效的。
+  需要使用 childAspectRatio 属性来调整宽高比例
   new GridView.count(
     scrollDirection：Axis.vertical（垂直布局）/horizontal（水平布局）
     padding：EdgeInsets类型的 内边距 
@@ -20,7 +22,7 @@ import 'package:flutter/material.dart';
 class MyGridView extends StatelessWidget {
   const MyGridView({Key key}) : super(key: key);
 
-  _getListViewData() {
+  _getGridViewData() {
     List<Widget> list = new List();
     List colorList = [
       Colors.red,
@@ -32,8 +34,8 @@ class MyGridView extends StatelessWidget {
     ];
     for (var i = 0; i < colorList.length; i++) {
       list.add(new Container(
-          width: 100.0,
-          height: 100.0,
+          // width: 100.0,
+          // height: 100.0,
           color: colorList[i],
           child: new Center(
               child: new Text(
@@ -45,6 +47,11 @@ class MyGridView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new GridView.count(crossAxisCount: 2, children: _getListViewData());
+    return new GridView.count(
+        crossAxisSpacing: 20.0,
+        mainAxisSpacing: 20.0,
+        padding: EdgeInsets.all(20.0),
+        crossAxisCount: 2,
+        children: _getGridViewData());
   }
 }
