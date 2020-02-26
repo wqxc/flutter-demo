@@ -16,4 +16,13 @@ List listAll = [
   {"title": 'Row 组件', "url": '/row'},
   {"title": 'Expanded 组件', "url": '/expanded'},
   {"title": 'Stack 组件', "url": '/stack'},
+  {"title": 'Align 组件', "url": '/align'},
+  {"title": 'Positioned 组件', "url": '/positioned'},
+  {"title": 'AspectRatio 组件', "url": '/aspectratio'},
+  {"title": 'Card 组件', "url": '/card'},
+  {"title": 'ListTile 组件', "url": '/listtile'},
+  {"title": 'CircleAvatar 组件', "url": '/circleavatar'},
+  {"title": 'RaiseButton 组件', "url": '/raisebutton'},
+  {"title": 'Icon 组件', "url": '/icon'},
+  {"title": 'Wrap 组件', "url": '/wrap'},
 ];

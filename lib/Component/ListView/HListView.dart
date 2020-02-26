@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 /*
   ListView 水平方向的ListView
   注意：在ListView中Container的height是不起作用的，默认是全屏的。
+  ListView 默认是无法在其内嵌套ListView 组件的
 */
 class MyHListView extends StatelessWidget {
   const MyHListView({Key key}) : super(key: key);

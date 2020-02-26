@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/Component/GridView/BuilderGridView.dart';
+import 'package:flutter_demo/Component/ListTile/ListTile.dart';
 import 'package:flutter_demo/Component/Padding/Padding.dart';
 import 'package:flutter_demo/Component/Stack/Stack.dart';
 import '../Component/Text/Text.dart';
@@ -21,6 +22,15 @@ import '../Component/Column/Column.dart';
 import '../Component/Row/Row.dart';
 import '../Component/Expanded/Expanded.dart';
 import '../Component/Stack/Stack.dart';
+import '../Component/Align/Align.dart';
+import '../Component/Positioned/Positioned.dart';
+import '../Component/AspectRatio/AspectRatio.dart';
+import '../Component/Card/Card.dart';
+import '../Component/ListTile/ListTile.dart';
+import '../Component/CircleAvatar/CircleAvatar.dart';
+import '../Component/RaisedButton/RaisedButton.dart';
+import '../Component/Wrap/Wrap.dart';
+import '../Component/IconContainer/Icon.dart';
 
 final Map routes = {
   '/': (context) =>
@@ -53,7 +63,22 @@ final Map routes = {
   '/row': (context) => new RootApp(new MyRow(), "Row 组件", new GoBack()),
   '/expanded': (context) =>
       new RootApp(new MyExpanded(), "Expanded 组件", new GoBack()),
-  '/stack': (context) => new RootApp(new MyStack(), "层叠 组件", new GoBack()),
+  '/stack': (context) => new RootApp(new MyStack(), "Stack 组件", new GoBack()),
+  '/align': (context) => new RootApp(new MyAlign(), "Align 组件", new GoBack()),
+  '/positioned': (context) =>
+      new RootApp(new MyPositioned(), "Positioned 组件", new GoBack()),
+  '/aspectratio': (context) =>
+      new RootApp(new MyAspectRatio(), "AspectRatio 组件", new GoBack()),
+  '/card': (context) => new RootApp(new MyCard(), "Card 组件", new GoBack()),
+  '/card': (context) => new RootApp(new MyCard(), "Card 组件", new GoBack()),
+  '/listtile': (context) =>
+      new RootApp(new MyListTile(), "ListTile 组件", new GoBack()),
+  '/circleavatar': (context) =>
+      new RootApp(new MyCircleAvatar(), "CircleAvatar 组件", new GoBack()),
+  '/wrap': (context) => new RootApp(new MyWrap(), "Wrap 组件", new GoBack()),
+  '/raisebutton': (context) =>
+      new RootApp(new MyRaiseButton(), "Button 组件", new GoBack()),
+  '/icon': (context) => new RootApp(new MyIcon(), "Icon 组件", new GoBack()),
 };
 
 // 命名路由传参的具体写法

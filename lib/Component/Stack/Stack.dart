@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 
 /*
    Stack 层叠组件。
-   主要的作用类似于 css的相对定位
+   主要的作用类似于 css的相对定位。
+
    两个属性
    child： 子组件
    alignment 配置所有的子元素的显示位置
    值为 Alignment(-1, 0),-1 到1 的值。
    表示，子组件在其父组件的相对位置。
+
+   如上是针对Stack中只有一个子组件的情况。
+   如果有多个组件，就无法针对每一个组件进行单独的布局
 */
 
 class MyStack extends StatelessWidget {
